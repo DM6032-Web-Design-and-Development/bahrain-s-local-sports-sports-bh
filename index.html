@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sports.BH</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+      <img src="logo.jpg" alt="Site Logo" class="nav-logo">
+    <ul>
+      <li><a href="#" data-section="home">Home</a></li>
+      <li><a href="#" data-section="products">Products</a></li>
+      <li><a href="#" data-section="contact">Contact Us</a></li>
+      <li><a href="#" data-section="about">About Us</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="active">
+    <div class="banner">
+      <h1>Push Your Limits</h1>
+    </div>
+    <div class="featured">
+      <h2>Featured Products</h2>
+      <div id="featured-products"></div>
+    </div>
+  </section>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="categories">
+      <button data-category="mens">Mens</button>
+      <button data-category="womens">Womens</button>
+      <button data-category="kids">Kids</button>
+      <button data-category="accessories">Accessories</button>
+    </div>
+    <div id="product-list"></div>
+  </section>
+
+  <section id="contact">
+  <h2>Contact Us</h2>
+  <form action="https://formspree.io/f/mpwnnavp" method="POST">
+    <label>
+      Your Name:
+      <br><input type="text" name="Name" required>
+    </label><br><br>
+    <label>
+      Your Email:
+      <br><input type="email" name="Email" required>
+    </label><br><br>
+    <label>
+      Your Number:
+      <br><input type="tel" name="Number" required>
+    </label><br><br>
+    <label>
+      Write Your Message:
+      <br><textarea name="Write Your Message" required></textarea>
+    </label><br><br>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+ <section id="about">
+  <h2>About Us</h2>
+  <div class="about-tab">
+    <p>Sports.BH is your go-to store for sports apparel and accessories in Bahrain.</p>
+    <div class="about-bg">
+      <img src="aboutus1.png" class="resized-img">
+    </div>
+  </div>
+</section>
+
+   <script src="script.js"></script>
+  
+  <footer>
+    © 2025 SportShop.bh — All rights reserved.
+  </footer>
+
+</body>
+</html>
